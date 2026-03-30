@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #064e3b;
+    --dark-color: black;
+    --light-bg: lch(91.44% 20.55 108.51);
+    --white: #fff;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background: var(--light-bg);
+    color: var(--dark-color);
+}
+
+header {
+    background-color:var(--primary-color);
+    padding: 2rem  5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+    }
+    header nav ul {
+        display: flex;
+        gap: 20px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0%;
+    }
+
+header nav ul li {
+    color: white;
+}
+
+header nav ul li a {
+    color:white;
+    text-decoration:none;
+}
