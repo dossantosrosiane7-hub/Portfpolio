@@ -4,39 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio | Rosiane Sales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
     <header>
-        <h1>Rosiane Sales</h1>
+        
+        <h1 id="nome-rosiane">Rosiane Sales</h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre Mim</a></li>
                 <li><a href="#projetos">Projetos</a></li>
                 <li> <a href="#contato">Contato</a></li>
+                <li><button type="button" id="btn-tema">🌙</button></li>
             </ul>
         </nav>
     </header>
+
     <main>
+
         <section id="sobre">
 
             <h2>Sobre Mim</h2>
             
             <div class="linha-branca"></div>
-
             <div class="sobre-container">
-           
             <img src="rosiane-foto.jpeg" alt="Foto da Rosiane Sales" width="200">
 
              <article class="card-sobre">
             <p>
-                <strong>Olá, Meu nome é Rosiane Sales</strong><br>
+                <strong>
+                    <span class="destaque">Olá,</span> Meu nome é Rosiane Sales</strong><br>
                 Sou estudante do curso Sistema para Internet. Estou me dedicando 
             ao desenvolvimento web.<br>
                 Este portfólio reúne  meus primeiros projetos 
          desenvolvidos com HTML, CSS e JavaScript.</p>
             </article>
-
             </div>
 
         </section>
@@ -65,23 +68,24 @@
                     para praticar o visual de uma loja online.</p>
                     <a href="https://github.com/rosianesalesweb" target="_blank">Ver no GitHub</a>
                 </article>
-
                 </div>
                 </section>
 
-        <section id="contato">
-                             
+        <section id="contato">                       
                 <h2>Contato</h2>
-                <div class="linha-branca"></div>
 
-                <form action="#" method="post">
+                <div class="linha-branca"></div>
+               
+                <form id="formulario" action="#" method="post">
                     
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" required>
-            
+                <input type="text" id="nome" 
+                name="nome" autocomplete="name"
+                required>
             
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" required>
+                <input type="email" id="email"
+                 name="email" autocomplete="email" required>
                 
                 <label for="msg">Mensagem:</label>
                 <textarea id="msg" name="msg"></textarea>
@@ -95,6 +99,9 @@
     <p>2026 - Desenvolvido por Rosiane Sales | Contato: 
         dossantosrosiane7@gmail.com
     </p>
-    </footer>
+
+      </footer>
+
+      <script src="script.js"></script>
     </body>
 </html>
