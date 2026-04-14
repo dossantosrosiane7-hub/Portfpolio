@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
 
 header h1 {
     font-family: 'Pacifico', cursive;
@@ -31,11 +31,11 @@ header h1 {
 }
 
 header nav ul {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-        padding: 0;
-        margin: 0%;
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0%;
     }
 
 header nav ul li {
@@ -119,11 +119,11 @@ section{
     border-radius: 50%;
     object-fit: cover;
     
-     border: 3px solid #064e3b;
+    border: 3px solid #064e3b;
 }
 
 .dark-theme .sobre-container img {
-border-color: #90ee90;
+    border-color: #90ee90;
 }
 
 .card-sobre {
@@ -165,7 +165,7 @@ border-color: #90ee90;
     font-size: 18px;
     color: #000000;
     text-align: left;
-   }
+    }
 
 .projetos-container {
     display: flex;
@@ -173,7 +173,7 @@ border-color: #90ee90;
     flex-wrap: wrap;
     gap: 25px;
     margin-top: 30px;
-   }
+    }
 
 #projetos h2 {
     text-align: center;
@@ -197,12 +197,11 @@ border-color: #90ee90;
     margin-bottom: 5px;
     text-align: center;
     padding-bottom: 0%;
-     }
+    }
 
 #contato {
     padding: 60px 5%;
     text-align: center;
-
    }
 
 #contato form {
@@ -218,7 +217,7 @@ border-color: #90ee90;
     max-width: 500px;
     margin: 40px auto;
     gap: 12px;
-      }
+    }
 
 .dark-theme a {
     color: #90ee90;
@@ -257,24 +256,40 @@ textarea {
     }
    
     button {
-        margin-top: 10px;
-        padding: 16px;
-        background-color: #1d4ed8;
-        color: white;
-        border: none;
-        border-radius: 8px;
-        font-size: 1rem;
-        font-weight: 700;
-        }
+    margin-top: 10px;
+    padding: 16px;
+    background-color: #1d4ed8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 700;
+    }
 button:hover {
     background-color: #0d3baf;
     box-shadow: 0 4px 12px rgb(37, 99, 235, 0.2);
     color: white;
-     cursor: pointer;
+    cursor: pointer;
+}
+
+.botao-tema {
+    background-color: transparent;
+    background: transparent;
+    padding: 0;
+    border: none;
+    font-size: 1.5rem;
+    box-shadow: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao-tema:focus,.botao-tema:active {
+    outline: none;
+    background-color: transparent
 }
 
 .dark-theme button {
-    background-color: #90ee90;
+    background-color: #065c06;
 }
 
 footer {
